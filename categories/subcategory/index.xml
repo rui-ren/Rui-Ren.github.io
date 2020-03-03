@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>subcategory on Rui Ren</title>
-    <link>https://example.org/categories/subcategory/</link>
+    <link>https://victormaggie.github.io/categories/subcategory/</link>
     <description>Recent content in subcategory on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Mar 2020 18:15:21 -0600</lastBuildDate>
     
-	<atom:link href="https://example.org/categories/subcategory/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://victormaggie.github.io/categories/subcategory/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello</title>
-      <link>https://example.org/2020/03/hello/</link>
+      <link>https://victormaggie.github.io/2020/03/hello/</link>
       <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
       
-      <guid>https://example.org/2020/03/hello/</guid>
+      <guid>https://victormaggie.github.io/2020/03/hello/</guid>
       <description>&lt;p&gt;hello, this is my first post.&lt;/p&gt;</description>
     </item>
     

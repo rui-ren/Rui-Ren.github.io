@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rui Ren</title>
-    <link>https://example.org/tags/</link>
+    <link>https://victormaggie.github.io/tags/</link>
     <description>Recent content in Tags on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Mar 2020 18:15:21 -0600</lastBuildDate>
     
-	<atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://victormaggie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>tag1</title>
-      <link>https://example.org/tags/tag1/</link>
+      <link>https://victormaggie.github.io/tags/tag1/</link>
       <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
       
-      <guid>https://example.org/tags/tag1/</guid>
+      <guid>https://victormaggie.github.io/tags/tag1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tag2</title>
-      <link>https://example.org/tags/tag2/</link>
+      <link>https://victormaggie.github.io/tags/tag2/</link>
       <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
       
-      <guid>https://example.org/tags/tag2/</guid>
+      <guid>https://victormaggie.github.io/tags/tag2/</guid>
       <description></description>
     </item>
     
