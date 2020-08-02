@@ -48,12 +48,7 @@
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/categories/category/</loc>
-    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/2020/03/hello/</loc>
+    <loc>https://victormaggie.github.io/2020/03/hello-world/</loc>
     <lastmod>2020-03-02T18:15:21-06:00</lastmod>
   </url>
   
@@ -68,12 +63,13 @@
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/home/</loc>
-    <priority>0</priority>
+    <loc>https://victormaggie.github.io/categories/welcome/</loc>
+    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/1/01/</loc>
+    <loc>https://victormaggie.github.io/home/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
