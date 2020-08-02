@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>subcategory on Rui Ren</title>
-    <link>https://victormaggie.github.io/categories/subcategory/</link>
-    <description>Recent content in subcategory on Rui Ren</description>
+    <title>Machine Learning on Rui Ren</title>
+    <link>https://victormaggie.github.io/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Aug 2020 15:57:10 -0500</lastBuildDate>
     
-	<atom:link href="https://victormaggie.github.io/categories/subcategory/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://victormaggie.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://victormaggie.github.io/2020/08/reinforcement-learning-for-finance/</guid>
       <description>Manual trading and Market simulationManual trading and Market simulationOverview  &amp;emsp; In this project, we first need figure out the indicators for decision making and stock trading. Before taking this project, I have no idea how to trade stock, just randomly `long` or `short` stocks, without any technical analysis, this project gave me great experience how to analyze the stock and how to make decision based on the stocks performance.</description>
-    </item>
-    
-    <item>
-      <title>Hello</title>
-      <link>https://victormaggie.github.io/2020/03/hello/</link>
-      <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
-      
-      <guid>https://victormaggie.github.io/2020/03/hello/</guid>
-      <description>&lt;p&gt;hello, this is my first post.&lt;/p&gt;</description>
     </item>
     
   </channel>

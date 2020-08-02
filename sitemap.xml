@@ -4,7 +4,47 @@
   
   <url>
     <loc>https://victormaggie.github.io/categories/</loc>
-    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/tags/machine-learning/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/categories/machine-learning/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/post/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/tags/q-learning/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/2020/08/reinforcement-learning-for-finance/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/categories/subcategory/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/tags/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
   </url>
   
   <url>
@@ -14,21 +54,6 @@
   
   <url>
     <loc>https://victormaggie.github.io/2020/03/hello/</loc>
-    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/post/</loc>
-    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/</loc>
-    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/categories/subcategory/</loc>
     <lastmod>2020-03-02T18:15:21-06:00</lastmod>
   </url>
   
@@ -43,13 +68,12 @@
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/tags/</loc>
-    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
+    <loc>https://victormaggie.github.io/home/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/home/</loc>
-    <priority>0</priority>
+    <loc>https://victormaggie.github.io/1/01/</loc>
   </url>
   
   <url>

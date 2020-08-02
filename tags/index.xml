@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2020 18:15:21 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 15:57:10 -0500</lastBuildDate>
     
 	<atom:link href="https://victormaggie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://victormaggie.github.io/tags/machine-learning/</link>
+      <pubDate>Sun, 02 Aug 2020 15:57:10 -0500</pubDate>
+      
+      <guid>https://victormaggie.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Q-Learning</title>
+      <link>https://victormaggie.github.io/tags/q-learning/</link>
+      <pubDate>Sun, 02 Aug 2020 15:57:10 -0500</pubDate>
+      
+      <guid>https://victormaggie.github.io/tags/q-learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>tag1</title>
