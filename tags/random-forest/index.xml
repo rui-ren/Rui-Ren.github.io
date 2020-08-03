@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random Forest on Rui Ren</title>
+    <link>https://victormaggie.github.io/tags/random-forest/</link>
+    <description>Recent content in Random Forest on Rui Ren</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Aug 2020 18:50:57 -0500</lastBuildDate>
+    
+	<atom:link href="https://victormaggie.github.io/tags/random-forest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Random Forest</title>
+      <link>https://victormaggie.github.io/2020/08/random-forest/</link>
+      <pubDate>Sun, 02 Aug 2020 18:50:57 -0500</pubDate>
+      
+      <guid>https://victormaggie.github.io/2020/08/random-forest/</guid>
+      <description>&amp;emsp;&amp;emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.1. Overfitting versue leaf sizeFig.</description>
+    </item>
+    
+  </channel>
+</rss>

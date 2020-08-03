@@ -12,20 +12,20 @@
     
     
     <item>
-      <title>tag1</title>
-      <link>https://victormaggie.github.io/tags/tag1/</link>
+      <title>Bagging</title>
+      <link>https://victormaggie.github.io/tags/bagging/</link>
       <pubDate>Sun, 02 Aug 2020 18:50:57 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/tags/tag1/</guid>
+      <guid>https://victormaggie.github.io/tags/bagging/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tag2</title>
-      <link>https://victormaggie.github.io/tags/tag2/</link>
+      <title>Random Forest</title>
+      <link>https://victormaggie.github.io/tags/random-forest/</link>
       <pubDate>Sun, 02 Aug 2020 18:50:57 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/tags/tag2/</guid>
+      <guid>https://victormaggie.github.io/tags/random-forest/</guid>
       <description></description>
     </item>
     
@@ -44,6 +44,24 @@
       <pubDate>Sun, 02 Aug 2020 15:57:10 -0500</pubDate>
       
       <guid>https://victormaggie.github.io/tags/q-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag1</title>
+      <link>https://victormaggie.github.io/tags/tag1/</link>
+      <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
+      
+      <guid>https://victormaggie.github.io/tags/tag1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag2</title>
+      <link>https://victormaggie.github.io/tags/tag2/</link>
+      <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
+      
+      <guid>https://victormaggie.github.io/tags/tag2/</guid>
       <description></description>
     </item>
     

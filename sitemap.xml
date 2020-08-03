@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://victormaggie.github.io/tags/bagging/</loc>
+    <lastmod>2020-08-02T18:50:57-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://victormaggie.github.io/categories/</loc>
     <lastmod>2020-08-02T18:50:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/categories/category/</loc>
+    <loc>https://victormaggie.github.io/categories/machine-learning/</loc>
     <lastmod>2020-08-02T18:50:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://victormaggie.github.io/post/</loc>
+    <lastmod>2020-08-02T18:50:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/tags/random-forest/</loc>
     <lastmod>2020-08-02T18:50:57-05:00</lastmod>
   </url>
   
@@ -28,32 +38,12 @@
   </url>
   
   <url>
-    <loc>https://victormaggie.github.io/categories/subcategory/</loc>
-    <lastmod>2020-08-02T18:50:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/tags/tag1/</loc>
-    <lastmod>2020-08-02T18:50:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/tags/tag2/</loc>
-    <lastmod>2020-08-02T18:50:57-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://victormaggie.github.io/tags/</loc>
     <lastmod>2020-08-02T18:50:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://victormaggie.github.io/tags/machine-learning/</loc>
-    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://victormaggie.github.io/categories/machine-learning/</loc>
     <lastmod>2020-08-02T15:57:10-05:00</lastmod>
   </url>
   
@@ -68,7 +58,22 @@
   </url>
   
   <url>
+    <loc>https://victormaggie.github.io/categories/subcategory/</loc>
+    <lastmod>2020-08-02T15:57:10-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://victormaggie.github.io/2020/03/hello-world/</loc>
+    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/tags/tag1/</loc>
+    <lastmod>2020-03-02T18:15:21-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victormaggie.github.io/tags/tag2/</loc>
     <lastmod>2020-03-02T18:15:21-06:00</lastmod>
   </url>
   
