@@ -222,6 +222,78 @@
     
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://victormaggie.github.io/2020/08/random-forest/">
+          Random Forest
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-08-02T18:50:57-05:00">
+        
+  August 2, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://victormaggie.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://victormaggie.github.io/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <h2 id="bagging-and-random-tree">Bagging and Random Tree</h2>
+<p>  In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.</p>
+<h4 id="1-overfitting-versue-leaf-size">1. Overfitting versue leaf size</h4>
+<!-- raw HTML omitted -->
+<p> Overfitting does happen in the decision tree learning module. As we know, the overfitting definition is that the training error is small while the testing error is larger, this means the generalization of this algorithm is poor, and cannot be used for future prediction. As shown in Fig 1, when leaf value is less than 10, that will have overfitting.</p>
+<h4 id="2-bagging">2. Bagging</h4>
+<p>  We built a <strong>Random Forest</strong> tree by bootstrap aggreating method. In order to discuss the how bootstrap can help solve the overfitting, we choose the bag size as 20, and leaf size differs from 1 ~ 18 to do the analysis.</p>
+<!-- raw HTML omitted -->
+<p>  As shown in Fig 2, Bagging can reduce the overfitting, comparing to Fig.1, when leaf size is less than 5, the testing RMSE for BagLearner is less than 0.005. However, the testing RMSE is over 0.006 for Decision Tree as shown in Fig. 1.</p>
+<p>  With the increasing of leaf size, the training RSME is increasing rapidly, however, the testing RMSE is very stable around 0.005~0.0045. As such, Bagging can help reduce overfitting and increase the prediction accuracy, as algorithm has characteristics of randomness.</p>
+<h4 id="3-quantitatively-analysis">3. Quantitatively analysis</h4>
+<p>  In this chapter, we quantitatively analysis the performance of <code>Random Tree Learning</code> and <code>Decision Tree Learning</code>. From Fig. 3 and Fig. 4, we can see that Random Tree can not defeat Decision Tree regarding RMSE. Both algorithm will suffer from overfitting, however, random tree algorithm can reduce the overfitting somehow.</p>
+<!-- raw HTML omitted -->
+<p>  Howver, in terms of time complexity, random tree is very fast. As Figure 4, decision tree is linear time complexity. In terms of random tree, it is more like a constant time complexity.</p>
+<!-- raw HTML omitted -->
+      
+      <p>
+        <a href="https://victormaggie.github.io/2020/08/random-forest/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
         <a class="link-unstyled" href="https://victormaggie.github.io/2020/08/reinforcement-learning-for-finance/">
           Reinforcement Learning for Finance
         </a>
