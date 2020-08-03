@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.65.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="author" content="Rui Ren">
+<meta name="keywords" content="tech">
+<meta name="description" content="
+">
+
+
+<meta property="og:description" content="
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Robotics Tracking and Localization">
+<meta name="twitter:title" content="Robotics Tracking and Localization">
+<meta property="og:url" content="https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+<meta property="twitter:url" content="https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+<meta property="og:site_name" content="Rui Ren">
+<meta property="og:description" content="
+">
+<meta name="twitter:description" content="
+">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-08-03T09:53:48">
+  
+  
+    <meta property="article:modified_time" content="2020-08-03T09:53:48">
+  
+  
+  
+    
+      <meta property="article:section" content="Robotics">
+    
+      <meta property="article:section" content="Sensor fusion">
+    
+  
+  
+    
+      <meta property="article:tag" content="Tracking">
+    
+      <meta property="article:tag" content="Localization">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/59c4ca3a1d0b598ad985c58e5ee7a7ba?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/59c4ca3a1d0b598ad985c58e5ee7a7ba?s=640">
+
+
+    <title>Robotics Tracking and Localization</title>
+
+    <link rel="icon" href="https://victormaggie.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://victormaggie.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://victormaggie.github.io/">Rui Ren</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://victormaggie.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/59c4ca3a1d0b598ad985c58e5ee7a7ba?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://victormaggie.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/59c4ca3a1d0b598ad985c58e5ee7a7ba?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Rui Ren</h4>
+        
+          <h5 class="sidebar-profile-bio">PhD in Petroleum Engineering, MS in Computer Science</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://victormaggie.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://victormaggie.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://victormaggie.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://victormaggie.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://victormaggie.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/victormaggie" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/rui-ren-5759579b/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://scholar.google.com/citations?user=uFrCAyYAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-google"></i>
+      
+      <span class="sidebar-button-desc">Google Scholar</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Robotics Tracking and Localization
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-08-03T09:53:48-05:00">
+        
+  August 3, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://victormaggie.github.io/categories/robotics">Robotics</a>, 
+    
+      <a class="category-link" href="https://victormaggie.github.io/categories/sensor-fusion">Sensor fusion</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              &emsp;&emsp;In this project, we talk about the <b>Bayesian based localization method</b>, Kalman filtering, particle filtering and path planning using A<sup>*</sup> and Breath First Search to find the minimum path.
+In the end, we delve into simultaneous localization and mapping method.
+
+<h2>Kalman filtering</h2>
+<P>
+    &emsp13; Kalman filtering is a linear quadratic estimation, an algorithm that uses a series of measurements observed over time, 
+    containing statistical noise and other inaccuracies, and produce estimates of unkown variables that tend to be more accurate than those based on
+    single measurement along. It can be divided into two parts, prediction and measurement.
+    <h5>&emsp;&emsp;Prediction update</h5>
+        <center><a href = <a href="https://www.codecogs.com/eqnedit.php?latex=x^&plus;=Fx&plus;V" target="_blank">
+            <img src="https://latex.codecogs.com/svg.latex?x^&plus;=Fx&plus;V" title="x^+=Fx+V" /></a></center></br>
+        <center><a href="https://www.codecogs.com/eqnedit.php?latex=P^&plus;=FPF^T&plus;Q" target="_blank">
+            <img src="https://latex.codecogs.com/svg.latex?P^&plus;=FPF^T&plus;Q" title="P^+=FPF^T+Q" /></a></center>
+    <h5>&emsp;&emsp;Measurement update</h5>
+        <center><a href="https://www.codecogs.com/eqnedit.php?latex=y=z&space;-Hx^{\prime}" target="_blank">
+            <img src="https://latex.codecogs.com/svg.latex?y=z&space;-Hx^{\prime}" title="y=z -Hx^{\prime}" /></a></center>
+        <center>&emsp13; <a href="https://www.codecogs.com/eqnedit.php?latex=K=P^&plus;&space;H^T&space;(HP^&plus;&space;H^T&plus;R)^{-1}" target="_blank">
+            <img src="https://latex.codecogs.com/svg.latex?K=P^&plus;&space;H^T&space;(HP^&plus;&space;H^T&plus;R)^{-1}" title="K=P^+ H^T (HP^+ H^T+R)^{-1}" /></a></center>
+        <center>&emsp13;<a href="https://www.codecogs.com/eqnedit.php?latex=x=x^{\prime}&plus;Ky" target="_blank">
+            <img src="https://latex.codecogs.com/svg.latex?x=x^{\prime}&plus;Ky" title="x=x^{\prime}+Ky" /></a></center>
+        <center>&emsp13;<a href="https://www.codecogs.com/eqnedit.php?latex=P=(I&space;-KH)&space;P^&plus;" target="_blank">
+            <img src="https://latex.codecogs.com/svg.latex?P=(I&space;-KH)&space;P^&plus;" title="P=(I -KH) P^+" /></a></center>
+        <center>
+            <img src="https://victormaggie.github.io/img2/1.gif">
+            <b><p style="font-size: medium;">Fig.1 Kalman filtering tracking<sup>1<a href="https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python/blob/master/06-Multivariate-Kalman-Filters.ipynb"></a></sup></p></b>
+    
+        </center>
+</p>
+
+<h2>Particle filtering</h2>
+<p>
+    &emsp;&emsp; Particle filter is a set of Monte Carlo algorithms used to solve filtering problems arising in signal processing and Bayesian statistical inference. It still has the prediction and measurement updates,
+    <center>&emsp13;<a href="https://www.codecogs.com/eqnedit.php?latex=X_k&space;=&space;g\left&space;(&space;X_{k-1}&space;\right&space;)&space;&plus;&space;W_{k-1}" target="_blank">
+        <img src="https://latex.codecogs.com/svg.latex?X_k&space;=&space;g\left&space;(&space;X_{k-1}&space;\right&space;)&space;&plus;&space;W_{k-1}" title="X_k = g\left ( X_{k-1} \right ) + W_{k-1}" /></a></center>
+    <center>&emsp13;<a href="https://www.codecogs.com/eqnedit.php?latex=Y_k&space;=&space;h\left&space;(&space;X_{k}&space;\right&space;)&space;&plus;&space;V_{k}" target="_blank">
+        <img src="https://latex.codecogs.com/svg.latex?Y_k&space;=&space;h\left&space;(&space;X_{k}&space;\right&space;)&space;&plus;&space;V_{k}" title="Y_k = h\left ( X_{k} \right ) + V_{k}" /></a></center>
+    &emsp;&emsp; The goal of this project is to practice implementing a particle ﬁlter used to localize a robotic glider that does not have access to terrestrial based GPS satellites.
+    The glider is released from a spacecraft over the surface of mars, and receives a distance to ground measurement from a downward facing radar, 
+    as well as an altitude estimate from a barometric pressure sensor.</br>
+    &emsp;&emsp; The glider has an on-board map of the area it is being dropped into. The map covers an area 10 km on a side (100 km<sup>2</sup>), 
+    and the robot is supposed to be dropped somewhere near (0,0). 
+    The map was generated by radar from the mars surveyor satellite mission, and has a 1x1 meter resolution. Dimensions in the map range from -5,000m to 5,000m.
+    <center>
+        <img src="https://victormaggie.github.io/img2/surface.png">
+        <b><p style="font-size: medium;">Fig.2 The map of the surface on the Mars.</p></b>
+    </center></br>
+
+    &emsp;&emsp; The glider will be dropped somewhere within the mapped area hopefully near (0,0), 
+    but possibly as far oﬀ as +/- 500m in both X and Y. It will pop out of the reentry craft approximately 5,000 meters (+/- 50m) above “sea level”. </br>
+    &emsp;&emsp; You also have up to 4500 seconds of “glide time” before the glider risks hitting the surface, 
+    but would need to steer the glider to keep it within the boundaries of your known map.This is a typical particle filter problems, we can locate the glider location, by the following simulation</br>
+    <center>
+        <img src="https://victormaggie.github.io/img2/3.gif", width="100">
+        <b><p style="font-size: medium;">Fig.3 The localization for mars glider using particle filtering.</p></b>
+    </center>
+</p>
+
+<h2>PID controller</h2>
+<p>
+    &emsp;&emsp;All rockets need precise control of the pressure for the feed system of liquid oxidizer and fuel into the engine turbopumps. 
+    A failure of engine turbo-pumps to supply the pressure to meet feed demands of the engine could force an abort of the launch or a disaster after liftoﬀ.</br>
+    &emsp;&emsp; The problem of maintaining the fuel mixture pressure supplied by the rocket’s turbopumps. In order for the rocket to leave the launchpad, the pumps must be pressurized up to their max level of 100 as quickly as possible. Once there, they must be maintained for the duration of the launch. 
+    Therefore, the goal will be to create a simple PD based controller that can make adjustments to the pump’s output in order to meet pressure demands.</br>
+    <center>
+        &emsp13;<img src="https://victormaggie.github.io/img2/pid.JPG", width="100", height="300">
+        <b><p style="font-size: medium;">Fig.3 PID controller for pump pressure.</b></p>
+    </center>
+    &emsp13;&emsp;The second part of the assignment is a slightly more diﬃcult adaption of the PID controller for controlling a rocket launch and reentry. 
+    It requires your controller be able to control the output of rocket engines on a simulated rocket ship 
+    such that it is able to successfully maintain speeds through diﬀerent atmospheric ﬂight regimes and as parameters such as thrust, weight, and air drag are constantly changing. 
+    <center>
+        <img src="https://victormaggie.github.io/img2/pid2.png" width=400>
+        <b><p style="font-size: medium;">Fig.4 PID controller for controlling a rocket launch and reentry.</p></b>
+    </center>
+</p>
+
+<h2>Pathing planning</h2>
+<p>&emsp;&emsp;In the first part, we will represent the warehouse as a grid in the manner of the planning problems from the Search lesson, 
+    and the robot and target packages will have rigid, blocky representations in this “gridworld.” 
+    In the second part, the warehouse will have a continuous instead of a discrete representation, 
+    and the robot will have to navigate carefully around corners to avoid crashing into them. In the end, the robot will pick up all the package for the warehouse.
+    <center>
+        &emsp13;<img src="https://victormaggie.github.io/img2/partB_case1.gif">
+        <b><p style="font-size: medium;">Fig.5 Robotic pathing planning for picking up packages.</p></b>
+    </center>
+</p>
+
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://victormaggie.github.io/tags/tracking/">Tracking</a>
+
+  <a class="tag tag--primary tag--small" href="https://victormaggie.github.io/tags/localization/">Localization</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://victormaggie.github.io/2020/08/random-forest/" data-tooltip="Random Forest">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Rui Ren. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://victormaggie.github.io/2020/08/random-forest/" data-tooltip="Random Forest">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvictormaggie.github.io%2F2020%2F08%2Frobotics-tracking-and-localization%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fvictormaggie.github.io%2F2020%2F08%2Frobotics-tracking-and-localization%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fvictormaggie.github.io%2F2020%2F08%2Frobotics-tracking-and-localization%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/59c4ca3a1d0b598ad985c58e5ee7a7ba?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Rui Ren</h4>
+    
+      <div id="about-card-bio">PhD in Petroleum Engineering, MS in Computer Science</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Data Scientist
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        United States
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://victormaggie.github.io/images/new.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://victormaggie.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/victormaggie.github.io\/2020\/08\/robotics-tracking-and-localization\/';
+          
+            this.page.identifier = '\/2020\/08\/robotics-tracking-and-localization\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'Rui Ren';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

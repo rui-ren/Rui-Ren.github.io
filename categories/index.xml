@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2020 18:50:57 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 09:53:48 -0500</lastBuildDate>
     
 	<atom:link href="https://victormaggie.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Robotics</title>
+      <link>https://victormaggie.github.io/categories/robotics/</link>
+      <pubDate>Mon, 03 Aug 2020 09:53:48 -0500</pubDate>
+      
+      <guid>https://victormaggie.github.io/categories/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sensor fusion</title>
+      <link>https://victormaggie.github.io/categories/sensor-fusion/</link>
+      <pubDate>Mon, 03 Aug 2020 09:53:48 -0500</pubDate>
+      
+      <guid>https://victormaggie.github.io/categories/sensor-fusion/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Machine Learning</title>
