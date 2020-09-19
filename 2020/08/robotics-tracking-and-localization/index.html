@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.65.3 with theme Tranquilpeak 0.4.7-BETA">
@@ -263,14 +263,14 @@ In the end, we delve into simultaneous localization and mapping method.
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              &emsp;&emsp;In this project, we talk about the <b>Bayesian based localization method</b>, Kalman filtering, particle filtering and path planning using A<sup>*</sup> and Breath First Search to find the minimum path.
-In the end, we delve into simultaneous localization and mapping method.
+              <p style = "text-align: justify;">&emsp;&emsp;In this project, we talk about the <b>Bayesian based localization method</b>, Kalman filtering, particle filtering and path planning using A<sup>*</sup> and Breath First Search to find the minimum path.
+In the end, we delve into simultaneous localization and mapping method.</p>
 
 <h2>Kalman filtering</h2>
 <P>
-    &emsp13; Kalman filtering is a linear quadratic estimation, an algorithm that uses a series of measurements observed over time, 
+    <p style = "text-align: justify;">&emsp13; Kalman filtering is a linear quadratic estimation, an algorithm that uses a series of measurements observed over time, 
     containing statistical noise and other inaccuracies, and produce estimates of unkown variables that tend to be more accurate than those based on
-    single measurement along. It can be divided into two parts, prediction and measurement.
+    single measurement along. It can be divided into two parts, prediction and measurement.</p>
     <h5>&emsp;&emsp;Prediction update</h5>
         <center><a href = <a href="https://www.codecogs.com/eqnedit.php?latex=x^&plus;=Fx&plus;V" target="_blank">
             <img src="https://latex.codecogs.com/svg.latex?x^&plus;=Fx&plus;V" title="x^+=Fx+V" /></a></center></br>
@@ -293,13 +293,14 @@ In the end, we delve into simultaneous localization and mapping method.
 </p>
 
 <h2>Particle filtering</h2>
-<p>
+<p style = "text-align: justify;">
     &emsp;&emsp; Particle filter is a set of Monte Carlo algorithms used to solve filtering problems arising in signal processing and Bayesian statistical inference. It still has the prediction and measurement updates,
     <center>&emsp13;<a href="https://www.codecogs.com/eqnedit.php?latex=X_k&space;=&space;g\left&space;(&space;X_{k-1}&space;\right&space;)&space;&plus;&space;W_{k-1}" target="_blank">
         <img src="https://latex.codecogs.com/svg.latex?X_k&space;=&space;g\left&space;(&space;X_{k-1}&space;\right&space;)&space;&plus;&space;W_{k-1}" title="X_k = g\left ( X_{k-1} \right ) + W_{k-1}" /></a></center>
     <center>&emsp13;<a href="https://www.codecogs.com/eqnedit.php?latex=Y_k&space;=&space;h\left&space;(&space;X_{k}&space;\right&space;)&space;&plus;&space;V_{k}" target="_blank">
         <img src="https://latex.codecogs.com/svg.latex?Y_k&space;=&space;h\left&space;(&space;X_{k}&space;\right&space;)&space;&plus;&space;V_{k}" title="Y_k = h\left ( X_{k} \right ) + V_{k}" /></a></center>
-    &emsp;&emsp; The goal of this project is to practice implementing a particle ﬁlter used to localize a robotic glider that does not have access to terrestrial based GPS satellites.
+        <p style = "text-align: justify;">
+        &emsp;&emsp; The goal of this project is to practice implementing a particle ﬁlter used to localize a robotic glider that does not have access to terrestrial based GPS satellites.
     The glider is released from a spacecraft over the surface of mars, and receives a distance to ground measurement from a downward facing radar, 
     as well as an altitude estimate from a barometric pressure sensor.</br>
     &emsp;&emsp; The glider has an on-board map of the area it is being dropped into. The map covers an area 10 km on a side (100 km<sup>2</sup>), 
@@ -309,7 +310,7 @@ In the end, we delve into simultaneous localization and mapping method.
         <img src="https://victormaggie.github.io/img2/surface.png">
         <b><p style="font-size: medium;">Fig.2 The map of the surface on the Mars.</p></b>
     </center></br>
-
+    <p style = "text-align: justify;">
     &emsp;&emsp; The glider will be dropped somewhere within the mapped area hopefully near (0,0), 
     but possibly as far oﬀ as +/- 500m in both X and Y. It will pop out of the reentry craft approximately 5,000 meters (+/- 50m) above “sea level”. </br>
     &emsp;&emsp; You also have up to 4500 seconds of “glide time” before the glider risks hitting the surface, 
@@ -321,7 +322,7 @@ In the end, we delve into simultaneous localization and mapping method.
 </p>
 
 <h2>PID controller</h2>
-<p>
+<p style = "text-align: justify;">
     &emsp;&emsp;All rockets need precise control of the pressure for the feed system of liquid oxidizer and fuel into the engine turbopumps. 
     A failure of engine turbo-pumps to supply the pressure to meet feed demands of the engine could force an abort of the launch or a disaster after liftoﬀ.</br>
     &emsp;&emsp; The problem of maintaining the fuel mixture pressure supplied by the rocket’s turbopumps. In order for the rocket to leave the launchpad, the pumps must be pressurized up to their max level of 100 as quickly as possible. Once there, they must be maintained for the duration of the launch. 
@@ -330,6 +331,7 @@ In the end, we delve into simultaneous localization and mapping method.
         &emsp13;<img src="https://victormaggie.github.io/img2/pid.JPG", width="100", height="300">
         <b><p style="font-size: medium;">Fig.3 PID controller for pump pressure.</b></p>
     </center>
+    <p style = "text-align: justify;">
     &emsp13;&emsp;The second part of the assignment is a slightly more diﬃcult adaption of the PID controller for controlling a rocket launch and reentry. 
     It requires your controller be able to control the output of rocket engines on a simulated rocket ship 
     such that it is able to successfully maintain speeds through diﬀerent atmospheric ﬂight regimes and as parameters such as thrust, weight, and air drag are constantly changing. 
@@ -340,7 +342,7 @@ In the end, we delve into simultaneous localization and mapping method.
 </p>
 
 <h2>Pathing planning</h2>
-<p>&emsp;&emsp;In the first part, we will represent the warehouse as a grid in the manner of the planning problems from the Search lesson, 
+<p style = "text-align: justify;">&emsp;&emsp;In the first part, we will represent the warehouse as a grid in the manner of the planning problems from the Search lesson, 
     and the robot and target packages will have rigid, blocky representations in this “gridworld.” 
     In the second part, the warehouse will have a continuous instead of a discrete representation, 
     and the robot will have to navigate carefully around corners to avoid crashing into them. In the end, the robot will pick up all the package for the warehouse.
@@ -351,7 +353,6 @@ In the end, we delve into simultaneous localization and mapping method.
 </p>
 
 
-              
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
