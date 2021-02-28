@@ -8,18 +8,30 @@
 <meta name="generator" content="Hugo 0.65.3 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="Rui Ren">
 <meta name="keywords" content="tech">
-<meta name="description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.1. Overfitting versue leaf sizeFig.">
+<meta name="description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
+1. Overfitting versue leaf size
+
+Fig.">
 
 
-<meta property="og:description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.1. Overfitting versue leaf sizeFig.">
+<meta property="og:description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
+1. Overfitting versue leaf size
+
+Fig.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Random Forest">
 <meta name="twitter:title" content="Random Forest">
 <meta property="og:url" content="https://victormaggie.github.io/2020/08/random-forest/">
 <meta property="twitter:url" content="https://victormaggie.github.io/2020/08/random-forest/">
 <meta property="og:site_name" content="Rui Ren">
-<meta property="og:description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.1. Overfitting versue leaf sizeFig.">
-<meta name="twitter:description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.1. Overfitting versue leaf sizeFig.">
+<meta property="og:description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
+1. Overfitting versue leaf size
+
+Fig.">
+<meta name="twitter:description" content="&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
+1. Overfitting versue leaf size
+
+Fig.">
 <meta property="og:locale" content="en-us">
 
   
@@ -253,8 +265,8 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              
-&emsp;&emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
+                <p style = "text-align: justify;">       
+&emsp;&emsp; In this project, we dive into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
 
 <h3 align="left">1. Overfitting versue leaf size</h3>
 
@@ -267,13 +279,14 @@
     </b>
 </p>
 
+<p style = "text-align: justify;">
 
 &emsp;Overfitting does happen in the decision tree learning module. As we know, the overfitting definition is that the training error is small while the testing error is larger, this means the generalization of this algorithm is poor, and cannot be used for future prediction. As shown in Fig 1, when leaf value is less than 10, that will have overfitting.
-
+</p>
 <h3 align="left">2. Bagging</h3>
-
-&emsp; We built a **Random Forest** tree by bootstrap aggreating method. In order to discuss the how bootstrap can help solve the overfitting, we choose the bag size as 20, and leaf size differs from 1 ~ 18 to do the analysis.
-
+<p style = "text-align: justify;">
+&emsp; We built a <b>Random Forest</b> tree by bootstrap aggreating method. In order to discuss the how bootstrap can help solve the overfitting, we choose the bag size as 20, and leaf size differs from 1 ~ 18 to do the analysis.
+</p>
 <p align="center">
   <img src="https://victormaggie.github.io/img1/Q2.png">
   <br>
@@ -283,15 +296,16 @@
 </br>
 </p>
 
-
+<p style = "text-align: justify;">
 &emsp; As shown in Fig 2, Bagging can reduce the overfitting, comparing to Fig.1, when leaf size is less than 5, the testing RMSE for BagLearner is less than 0.005. However, the testing RMSE is over 0.006 for Decision Tree as shown in Fig. 1.
-
+<br>
 &emsp; With the increasing of leaf size, the training RSME is increasing rapidly, however, the testing RMSE is very stable around 0.005~0.0045. As such, Bagging can help reduce overfitting and increase the prediction accuracy, as algorithm has characteristics of randomness.
 
 <h3 align="left">3. Quantitatively analysis</h3>
 
-&emsp; In this chapter, we quantitatively analysis the performance of `Random Tree Learning` and `Decision Tree Learning`. From Fig. 3 and Fig. 4, we can see that Random Tree can not defeat Decision Tree regarding RMSE. Both algorithm will suffer from overfitting, however, random tree algorithm can reduce the overfitting somehow.
-
+<p style='text-align: justify'>
+&emsp; In this chapter, we quantitatively analysis the performance of <b>Random Tree Learning </b> and <b>Decision Tree Learning</b>. From Fig. 3 and Fig. 4, we can see that Random Tree can not defeat Decision Tree regarding RMSE. Both algorithm will suffer from overfitting, however, random tree algorithm can reduce the overfitting somehow.
+</p>
 <p align="center">
   <img src="https://victormaggie.github.io/img1/3.png" width="425" > 
   <img src="https://victormaggie.github.io/img1/4.png" width="425"/>
@@ -302,6 +316,7 @@
     </br>
 </p>
 
+<p style = "text-align: justify;">
 &emsp; Howver, in terms of time complexity, random tree is very fast. As Figure 4, decision tree is linear time complexity. In terms of random tree, it is more like a constant time complexity.
 
 <p align="center">
@@ -314,8 +329,6 @@
 </p>
 
 
-
-              
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
