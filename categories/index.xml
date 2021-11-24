@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Rui Ren</title>
-    <link>https://victormaggie.github.io/categories/</link>
+    <link>https://Rui-Ren.github.io/categories/</link>
     <description>Recent content in Categories on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Aug 2020 09:53:48 -0500</lastBuildDate>
     
-	<atom:link href="https://victormaggie.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Rui-Ren.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Robotics</title>
-      <link>https://victormaggie.github.io/categories/robotics/</link>
+      <link>https://Rui-Ren.github.io/categories/robotics/</link>
       <pubDate>Mon, 03 Aug 2020 09:53:48 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/categories/robotics/</guid>
+      <guid>https://Rui-Ren.github.io/categories/robotics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sensor fusion</title>
-      <link>https://victormaggie.github.io/categories/sensor-fusion/</link>
+      <link>https://Rui-Ren.github.io/categories/sensor-fusion/</link>
       <pubDate>Mon, 03 Aug 2020 09:53:48 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/categories/sensor-fusion/</guid>
+      <guid>https://Rui-Ren.github.io/categories/sensor-fusion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://victormaggie.github.io/categories/machine-learning/</link>
+      <link>https://Rui-Ren.github.io/categories/machine-learning/</link>
       <pubDate>Sun, 02 Aug 2020 18:50:57 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/categories/machine-learning/</guid>
+      <guid>https://Rui-Ren.github.io/categories/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>subcategory</title>
-      <link>https://victormaggie.github.io/categories/subcategory/</link>
+      <link>https://Rui-Ren.github.io/categories/subcategory/</link>
       <pubDate>Sun, 02 Aug 2020 15:57:10 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/categories/subcategory/</guid>
+      <guid>https://Rui-Ren.github.io/categories/subcategory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>https://victormaggie.github.io/categories/welcome/</link>
+      <link>https://Rui-Ren.github.io/categories/welcome/</link>
       <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
       
-      <guid>https://victormaggie.github.io/categories/welcome/</guid>
+      <guid>https://Rui-Ren.github.io/categories/welcome/</guid>
       <description></description>
     </item>
     

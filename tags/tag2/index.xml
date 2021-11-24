@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tag2 on Rui Ren</title>
-    <link>https://victormaggie.github.io/tags/tag2/</link>
+    <link>https://Rui-Ren.github.io/tags/tag2/</link>
     <description>Recent content in tag2 on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Mar 2020 18:15:21 -0600</lastBuildDate>
     
-	<atom:link href="https://victormaggie.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Rui-Ren.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>https://victormaggie.github.io/2020/03/hello-world/</link>
+      <link>https://Rui-Ren.github.io/2020/03/hello-world/</link>
       <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
       
-      <guid>https://victormaggie.github.io/2020/03/hello-world/</guid>
+      <guid>https://Rui-Ren.github.io/2020/03/hello-world/</guid>
       <description>&lt;p&gt;Welcome to my website!&lt;/p&gt;
 &lt;p&gt;  My name is Rui Ren, and I am a PhD in engineering. I have been doing quantitative research for the past few years. During my doctoral research, I was conducting a project to digitize and automate data processing and machine learning for my sponsor companies like BP, Chevron, Shell etc. I have few patents and research publications out of this research. My specialization is machine learning, deep learning, and coding. My strength is to think out of the box and understand the customers&amp;rsquo; need and make a way to automate the products.&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;</description>

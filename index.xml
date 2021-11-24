@@ -2,50 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rui Ren</title>
-    <link>https://victormaggie.github.io/</link>
+    <link>https://Rui-Ren.github.io/</link>
     <description>Recent content on Rui Ren</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Aug 2020 09:53:48 -0500</lastBuildDate>
     
-	<atom:link href="https://victormaggie.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Rui-Ren.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Robotics Tracking and Localization</title>
-      <link>https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/</link>
+      <link>https://Rui-Ren.github.io/2020/08/robotics-tracking-and-localization/</link>
       <pubDate>Mon, 03 Aug 2020 09:53:48 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/2020/08/robotics-tracking-and-localization/</guid>
+      <guid>https://Rui-Ren.github.io/2020/08/robotics-tracking-and-localization/</guid>
       <description>
 </description>
     </item>
     
     <item>
       <title>Random Forest</title>
-      <link>https://victormaggie.github.io/2020/08/random-forest/</link>
+      <link>https://Rui-Ren.github.io/2020/08/random-forest/</link>
       <pubDate>Sun, 02 Aug 2020 18:50:57 -0500</pubDate>
       
-      <guid>https://victormaggie.github.io/2020/08/random-forest/</guid>
-      <description>&amp;emsp;&amp;emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.1. Overfitting versue leaf sizeFig.</description>
+      <guid>https://Rui-Ren.github.io/2020/08/random-forest/</guid>
+      <description>&amp;emsp;&amp;emsp; In this project, we delve into the Tree-based machine learning model for Finance. Currently, XGBoost or LightBoost, etc. works well for machine learning projects. However, it is more difficult to built them from scracth because of their optimization for memory or parallel/GPU computing. We then start to build Random Forest and Decision Tree from Scracth. Then discuss how leaf size and prune influence on the performance.
+1. Overfitting versue leaf size
+
+Fig.</description>
     </item>
-    
+    Rui-Ren
     <item>
       <title>Reinforcement Learning for Finance</title>
-      <link>https://victormaggie.github.io/2020/08/reinforcement-learning-for-finance/</link>
+      <link>https://Rui-Ren.github.io/2020/08/reinforcement-learning-for-finance/</link>
       <pubDate>Sun, 02 Aug 2020 15:57:10 -0500</pubDate>
       
       <guid>https://victormaggie.github.io/2020/08/reinforcement-learning-for-finance/</guid>
-      <description>Manual trading and Market simulationManual trading and Market simulationOverview  &amp;emsp; In this project, we first need figure out the indicators for decision making and stock trading. Before taking this project, I have no idea how to trade stock, just randomly `long` or `short` stocks, without any technical analysis, this project gave me great experience how to analyze the stock and how to make decision based on the stocks performance.</description>
+      <description>Manual trading and Market simulation
+
+Rui-Ren
+
+
+Manual trading and MRui-Rention
+Overview 
+ &amp;emsp; In this project, we first need figure out the indicators for decision making and stock trading. Before taking this project, I have no idea how to trade stock, just randomly `long` or `short` stocks, without any technical analysis, this project gave me great experience how to analyze the stock and how to make decision based on the stocks performance.</description>
     </item>
     
     <item>
       <title>Hello World</title>
       <link>https://victormaggie.github.io/2020/03/hello-world/</link>
-      <pubDate>Mon, 02 Mar 2020 18:15:21 -0600</pubDate>
+      <pubDate>Mon, Rui-Ren18:15:21 -0600</pubDate>
       
       <guid>https://victormaggie.github.io/2020/03/hello-world/</guid>
-      <description>&lt;p&gt;Welcome to my website!&lt;/p&gt;
+      <description>&Rui-Renome to my website!&lt;/p&gt;
 &lt;p&gt;  My name is Rui Ren, and I am a PhD in engineering. I have been doing quantitative research for the past few years. During my doctoral research, I was conducting a project to digitize and automate data processing and machine learning for my sponsor companies like BP, Chevron, Shell etc. I have few patents and research publications out of this research. My specialization is machine learning, deep learning, and coding. My strength is to think out of the box and understand the customers&amp;rsquo; need and make a way to automate the products.&lt;/p&gt;
 &lt;p&gt;Cheers!&lt;/p&gt;</description>
     </item>
